@@ -864,7 +864,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.40000001;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout2.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout2.sqf'""];";
 					description="Survivor";
 					syncId=4;
 					synchronizations[]={3};
@@ -877,7 +877,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.40000001;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout1.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout1.sqf'""];";
 					description="Survivor";
 					syncId=5;
 					synchronizations[]={3};
@@ -890,7 +890,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.40000001;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout3.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout3.sqf'""];";
 					description="Survivor";
 					syncId=6;
 					synchronizations[]={3};
@@ -912,7 +912,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.44999999;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout3.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout3.sqf'""];";
 					description="Survivor";
 					syncId=7;
 					synchronizations[]={3};
@@ -925,7 +925,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.44999999;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout1.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout1.sqf'""];";
 					description="Survivor";
 					syncId=8;
 					synchronizations[]={3};
@@ -938,7 +938,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.44999999;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout2.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout2.sqf'""];";
 					description="Survivor";
 					syncId=9;
 					synchronizations[]={3};
@@ -953,14 +953,14 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={5347.2119,-0.022248384,9589.2051};
+					position[]={5347.2119,0.22777951,9589.2051};
 					id=29;
 					side="WEST";
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.40000001;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout1.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout1.sqf'""];";
 					description="Survivor";
 					syncId=10;
 					synchronizations[]={3};
@@ -973,7 +973,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.40000001;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout3.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout3.sqf'""];";
 					description="Survivor";
 					syncId=11;
 					synchronizations[]={3};
@@ -986,7 +986,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.40000001;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout2.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout2.sqf'""];";
 					description="Survivor";
 					syncId=12;
 					synchronizations[]={3};
@@ -1008,7 +1008,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout3.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout3.sqf'""];";
 					description="Survivor";
 					syncId=13;
 					synchronizations[]={3};
@@ -1021,7 +1021,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.5;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout2.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout2.sqf'""];";
 					description="Survivor";
 					syncId=14;
 					synchronizations[]={3};
@@ -1034,7 +1034,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.5;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout1.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout1.sqf'""];";
 					description="Survivor";
 					syncId=15;
 					synchronizations[]={3};
@@ -1056,7 +1056,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout2.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout2.sqf'""];";
 					description="Survivor";
 					syncId=16;
 					synchronizations[]={3};
@@ -1069,7 +1069,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.40000001;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout1.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout1.sqf'""];";
 					description="Survivor";
 					syncId=17;
 					synchronizations[]={3};
@@ -1082,7 +1082,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.44999999;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout3.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout3.sqf'""];";
 					description="Survivor";
 					syncId=18;
 					synchronizations[]={3};
@@ -1104,7 +1104,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.40000001;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout1.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout1.sqf'""];";
 					description="Survivor";
 					syncId=19;
 					synchronizations[]={3};
@@ -1117,7 +1117,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.40000001;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout3.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout3.sqf'""];";
 					description="Survivor";
 					syncId=20;
 					synchronizations[]={3};
@@ -1130,7 +1130,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.40000001;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout2.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout2.sqf'""];";
 					description="Survivor";
 					syncId=21;
 					synchronizations[]={3};
@@ -1152,7 +1152,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.44999999;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout3.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout3.sqf'""];";
 					description="Survivor";
 					syncId=22;
 					synchronizations[]={3};
@@ -1165,7 +1165,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.44999999;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout1.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout1.sqf'""];";
 					description="Survivor";
 					syncId=23;
 					synchronizations[]={3};
@@ -1178,7 +1178,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.44999999;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout2.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout2.sqf'""];";
 					description="Survivor";
 					syncId=24;
 					synchronizations[]={3};
@@ -1200,7 +1200,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.40000001;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout2.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout2.sqf'""];";
 					description="Survivor";
 					syncId=25;
 					synchronizations[]={3};
@@ -1213,7 +1213,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.40000001;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout1.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout1.sqf'""];";
 					description="Survivor";
 					syncId=26;
 					synchronizations[]={3};
@@ -1226,7 +1226,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.40000001;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout3.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout3.sqf'""];";
 					description="Survivor";
 					syncId=27;
 					synchronizations[]={3};
@@ -1248,7 +1248,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout2.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout2.sqf'""];";
 					description="Survivor";
 					syncId=28;
 					synchronizations[]={3};
@@ -1261,7 +1261,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.5;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout1.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout1.sqf'""];";
 					description="Survivor";
 					syncId=29;
 					synchronizations[]={3};
@@ -1274,7 +1274,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.5;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout3.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout3.sqf'""];";
 					description="Survivor";
 					syncId=30;
 					synchronizations[]={3};
@@ -1296,7 +1296,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.5;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout1.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout1.sqf'""];";
 					description="Survivor";
 					syncId=31;
 					synchronizations[]={3};
@@ -1309,7 +1309,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.40000001;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout3.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout3.sqf'""];";
 					description="Survivor";
 					syncId=32;
 					synchronizations[]={3};
@@ -1322,7 +1322,7 @@ class Mission
 					vehicle="B_engineer_F";
 					player="PLAY CDG";
 					skill=0.44999999;
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout2.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout2.sqf'""];";
 					description="Survivor";
 					syncId=33;
 					synchronizations[]={3};
@@ -1415,7 +1415,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="p2";
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS""; null = [this] execVM ""Loadouts\Loadout1.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout1.sqf'""];";
+					init="null = [this] execVM ""Loadouts\Loadout1.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout1.sqf'""];";
 					description="Reserved for Game Master";
 					syncId=35;
 					synchronizations[]={3};
@@ -1438,7 +1438,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="p3";
-					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					init="null = [this] execVM ""Loadouts\Loadout3.sqf""; this addeventhandler [""respawn"",""_this execVM 'Loadouts\Loadout3.sqf'""];";
 					description="Player Moderator - Olmsted";
 					syncId=36;
 					synchronizations[]={3};
