@@ -1,0 +1,2545 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"A3_Missions_F_Curator",
+		"3DEN",
+		"a3_modules_f_curator_curator",
+		"A3_Modules_F_Multiplayer",
+		"a3_map_altis",
+		"A3_Modules_F_Curator_Environment",
+		"A3_Weapons_F_Beta_Ammoboxes",
+		"a3_weapons_f_ammoboxes",
+		"ryanzombiesfunctions",
+		"ace_explosives",
+		"ace_hearing",
+		"ace_interaction",
+		"ace_common",
+		"ace_captives",
+		"ace_map",
+		"ace_nametags",
+		"ace_finger",
+		"ace_respawn",
+		"ace_sitting",
+		"ace_viewdistance",
+		"ace_weather",
+		"ace_zeus",
+		"ace_medical",
+		"A3_Characters_F_INDEP",
+		"A3_Characters_F_OPFOR",
+		"A3_Data_F_Curator_Virtual",
+		"A3_Boat_F_Trawler",
+		"A3_Boat_F_Gamma_Boat_Transport_01",
+		"mcc_sandbox",
+		"alive_main",
+		"alive_sys_data",
+		"alive_sys_playeroptions",
+		"alive_sys_profile",
+		"alive_sys_logistics",
+		"Ryanzombies",
+		"task_force_radio_items"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Modules_F_Curator_Environment",
+		"3DEN",
+		"a3_modules_f_curator_curator",
+		"A3_Missions_F_Curator",
+		"ryanzombiesfunctions",
+		"ace_explosives",
+		"ace_hearing",
+		"ace_interaction",
+		"ace_common",
+		"ace_captives",
+		"ace_map",
+		"ace_nametags",
+		"ace_finger",
+		"ace_respawn",
+		"ace_sitting",
+		"ace_viewdistance",
+		"ace_weather",
+		"ace_zeus",
+		"ace_medical",
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"A3_Data_F_Curator_Virtual",
+		"mcc_sandbox",
+		"alive_main",
+		"alive_sys_data",
+		"alive_sys_playeroptions",
+		"alive_sys_profile",
+		"alive_sys_logistics",
+		"task_force_radio_items",
+		"Ryanzombies",
+		"A3_Weapons_F_Beta_Ammoboxes",
+		"a3_weapons_f_ammoboxes",
+		"A3_Boat_F_Trawler",
+		"A3_Boat_F_Gamma_Boat_Transport_01",
+		"a3_map_altis"
+	};
+	randomSeed=7287423;
+	class Intel
+	{
+		briefingName="JTTG Zombie RPG";
+		overviewText="Zombie Role Playing Game kinda like Dungeons and Dragons";
+		resistanceEast=1;
+		timeOfChanges=7200;
+		startWeather=0.25;
+		startFog=0.55000001;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastFog=0.049999997;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		year=2015;
+		month=8;
+		day=2;
+		hour=4;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=24;
+		class Item0
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={132.49506,0.013677677,148.57837};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="4";
+							parentCls="ModuleTimeMultiplier_F";
+							typeName="TimeMultiplier";
+						};
+					};
+					id=0;
+					side="LOGIC";
+					vehicle="ModuleTimeMultiplier_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={164.23921,0.00017181737,182.60229};
+					azimut=-0.73071599;
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="p1";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="Game Master";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=1;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="bis_curator";
+					syncId=0;
+					synchronizations[]={2,1};
+				};
+				class Item1
+				{
+					position[]={160.19987,-0.013920277,180.52881};
+					azimut=355.92065;
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="";
+							parentCls="ModuleCuratorAddEditableObjects";
+							typeName="Curator";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ModuleCuratorAddEditableObjects";
+							typeName="AddCrew";
+						};
+					};
+					id=2;
+					side="LOGIC";
+					vehicle="ModuleCuratorAddEditableObjects";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=1;
+					synchronizations[]={38,0,34,37};
+				};
+				class Item2
+				{
+					position[]={168.1172,0.0041418355,180.65552};
+					azimut=359.87747;
+					id=3;
+					side="LOGIC";
+					vehicle="ModuleMPTypeGameMaster_F";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=2;
+					synchronizations[]={0,34,37};
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={146.69917,-0.012404006,154.77222};
+					azimut=-0.73118901;
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="0.9";
+							parentCls="RyanZM_ModuleZombieDeletion";
+							typeName="Deletion";
+						};
+						class Item1
+						{
+							value="1500";
+							parentCls="RyanZM_ModuleZombieDeletion";
+							typeName="DeletionRadius";
+						};
+						class Item2
+						{
+							value="0.9";
+							parentCls="RyanZM_ModuleZombieDeletion";
+							typeName="DeletionDemons";
+						};
+						class Item3
+						{
+							value="1500";
+							parentCls="RyanZM_ModuleZombieDeletion";
+							typeName="DeletionRadiusDemons";
+						};
+					};
+					id=4;
+					side="LOGIC";
+					vehicle="RyanZM_ModuleZombieDeletion";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={145.55363,-0.010000589,154.70776};
+					azimut=-0.73118901;
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="0.7";
+							parentCls="RyanZM_ModuleZombieHealth";
+							typeName="ZombieMaxHealth";
+						};
+						class Item1
+						{
+							value="0.7";
+							parentCls="RyanZM_ModuleZombieHealth";
+							typeName="DemonMaxHealth";
+						};
+					};
+					id=5;
+					side="LOGIC";
+					vehicle="RyanZM_ModuleZombieHealth";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={147.76363,-0.013985948,154.75073};
+					azimut=-0.73118901;
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="0.9";
+							parentCls="RyanZM_ModuleInfection";
+							typeName="Infection";
+						};
+						class Item1
+						{
+							value="30";
+							parentCls="RyanZM_ModuleInfection";
+							typeName="InfectionTimer";
+						};
+						class Item2
+						{
+							value="0.9";
+							parentCls="RyanZM_ModuleInfection";
+							typeName="Uniform";
+						};
+					};
+					id=6;
+					side="LOGIC";
+					vehicle="RyanZM_ModuleInfection";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=13;
+				class Item0
+				{
+					position[]={135.19525,-0.0075126151,167.07544};
+					azimut=-0.73118901;
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="0";
+							parentCls="ACE_ModuleExplosive";
+							typeName="RequireSpecialist";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ACE_ModuleExplosive";
+							typeName="PunishNonSpecialists";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ACE_ModuleExplosive";
+							typeName="ExplodeOnDefuse";
+						};
+					};
+					id=7;
+					side="LOGIC";
+					vehicle="ACE_ModuleExplosive";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={135.77533,-0.0021787793,162.927};
+					azimut=-0.73118901;
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_ModuleHearing";
+							typeName="EnableCombatDeafness";
+						};
+					};
+					id=8;
+					side="LOGIC";
+					vehicle="ACE_ModuleHearing";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={133.15228,0.0051434725,163.11841};
+					azimut=-0.73118901;
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_ModuleInteraction";
+							typeName="EnableTeamManagement";
+						};
+					};
+					id=9;
+					side="LOGIC";
+					vehicle="ACE_ModuleInteraction";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={132.18256,-0.00093940366,166.65161};
+					azimut=-0.73118901;
+					id=10;
+					side="LOGIC";
+					vehicle="ACE_ModuleLSDVehicles";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item4
+				{
+					position[]={137.84564,-0.0091131758,166.72827};
+					azimut=-0.73118901;
+					id=11;
+					side="LOGIC";
+					vehicle="ace_captives_ModuleSurrender";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item5
+				{
+					position[]={138.50385,-0.0073649902,162.26733};
+					azimut=-0.73118901;
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_ModuleMap";
+							typeName="MapIllumination";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ACE_ModuleMap";
+							typeName="MapShake";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ACE_ModuleMap";
+							typeName="MapLimitZoom";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ACE_ModuleMap";
+							typeName="MapShowCursorCoordinates";
+						};
+					};
+					id=12;
+					side="LOGIC";
+					vehicle="ACE_ModuleMap";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item6
+				{
+					position[]={133.1142,-0.000356392,165.29321};
+					azimut=-0.73118901;
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="-1";
+							parentCls="ACE_ModuleNameTags";
+							typeName="showPlayerNames";
+						};
+						class Item1
+						{
+							value="5";
+							parentCls="ACE_ModuleNameTags";
+							typeName="playerNamesViewDistance";
+						};
+						class Item2
+						{
+							value="-1";
+							parentCls="ACE_ModuleNameTags";
+							typeName="showNamesForAI";
+						};
+						class Item3
+						{
+							value="-1";
+							parentCls="ACE_ModuleNameTags";
+							typeName="showVehicleCrewInfo";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ACE_ModuleNameTags";
+							typeName="showCursorTagForVehicles";
+						};
+					};
+					id=13;
+					side="LOGIC";
+					vehicle="ACE_ModuleNameTags";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item7
+				{
+					position[]={130.71381,-0.0007048659,168.28735};
+					azimut=-0.73118901;
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_finger_moduleSettings";
+							typeName="enabled";
+						};
+						class Item1
+						{
+							value="4";
+							parentCls="ace_finger_moduleSettings";
+							typeName="maxRange";
+						};
+					};
+					id=14;
+					side="LOGIC";
+					vehicle="ace_finger_moduleSettings";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item8
+				{
+					position[]={138.39545,-0.0094846692,164.71948};
+					azimut=-0.73118901;
+					id=15;
+					side="LOGIC";
+					vehicle="ACE_ModuleRallypoint";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item9
+				{
+					position[]={137.81244,-0.0055116015,169.68433};
+					azimut=-0.73118901;
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_ModuleSitting";
+							typeName="enable";
+						};
+					};
+					id=16;
+					side="LOGIC";
+					vehicle="ACE_ModuleSitting";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item10
+				{
+					position[]={135.13763,-0.00734617,170.11011};
+					azimut=-0.73118901;
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_viewdistance_ModuleSettings";
+							typeName="moduleViewDistanceEnabled";
+						};
+						class Item1
+						{
+							value="10000";
+							parentCls="ace_viewdistance_ModuleSettings";
+							typeName="moduleViewDistanceLimit";
+						};
+					};
+					id=17;
+					side="LOGIC";
+					vehicle="ace_viewdistance_ModuleSettings";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item11
+				{
+					position[]={132.65424,-0.0064285835,169.68433};
+					azimut=-0.73118901;
+					class args
+					{
+						items=6;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="enableServerController";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="useACEWeather";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="syncRain";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="syncWind";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="syncMisc";
+						};
+						class Item5
+						{
+							value="60";
+							parentCls="ace_weather_ModuleSettings";
+							typeName="serverUpdateInterval";
+						};
+					};
+					id=18;
+					side="LOGIC";
+					vehicle="ace_weather_ModuleSettings";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item12
+				{
+					position[]={139.88861,-0.0057586911,168.02319};
+					azimut=-0.73118901;
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="zeusAscension";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="zeusBird";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="remoteWind";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="radioOrdnance";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="revealMines";
+						};
+					};
+					id=19;
+					side="LOGIC";
+					vehicle="ace_zeus_moduleSettings";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={125.46381,0.0059915683,171.57202};
+					azimut=-0.73118901;
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="level";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="medicSetting";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="allowLitterCreation";
+						};
+						class Item3
+						{
+							value="1800";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="litterCleanUpDelay";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="enableScreams";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="playerDamageThreshold";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="AIDamageThreshold";
+						};
+						class Item7
+						{
+							value="0";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="enableUnconsciousnessAI";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="remoteControlledAI";
+						};
+						class Item9
+						{
+							value="0";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="preventInstaDeath";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="bleedingCoefficient";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="painCoefficient";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="keepLocalSettingsSynced";
+						};
+					};
+					id=20;
+					side="LOGIC";
+					vehicle="ACE_moduleMedicalSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={123.83588,0.017801674,169.12329};
+					azimut=-0.73118901;
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="0";
+							parentCls="ACE_moduleReviveSettings";
+							typeName="enableRevive";
+						};
+						class Item1
+						{
+							value="120";
+							parentCls="ACE_moduleReviveSettings";
+							typeName="maxReviveTime";
+						};
+						class Item2
+						{
+							value="-1";
+							parentCls="ACE_moduleReviveSettings";
+							typeName="amountOfReviveLives";
+						};
+					};
+					id=21;
+					side="LOGIC";
+					vehicle="ACE_moduleReviveSettings";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={128.51199,-0.0044635087,173.48022};
+					azimut=-0.73118901;
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="";
+							parentCls="ACE_moduleAssignMedicRoles";
+							typeName="EnableList";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ACE_moduleAssignMedicRoles";
+							typeName="role";
+						};
+					};
+					id=22;
+					side="LOGIC";
+					vehicle="ACE_moduleAssignMedicRoles";
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=3;
+					synchronizations[]={17,6,5,4,16,15,14,13,7,9,8,18,10,11,12,19,21,20,28,30,29,32,31,33,24,22,23,25,26,27,35,36};
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={5318.2852,0.011700838,9601.9668};
+					id=23;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.40000001;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=4;
+					synchronizations[]={3};
+				};
+				class Item1
+				{
+					position[]={5317.0146,0.0040830756,9600.6172};
+					id=24;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=5;
+					synchronizations[]={3};
+				};
+				class Item2
+				{
+					position[]={5319.7695,0.013347991,9600.5625};
+					id=25;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=6;
+					synchronizations[]={3};
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={5341.8857,-0.0227989,9586.0898};
+					id=26;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.44999999;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=7;
+					synchronizations[]={3};
+				};
+				class Item1
+				{
+					position[]={5343.0986,-0.025143988,9584.6895};
+					id=27;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.44999999;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=8;
+					synchronizations[]={3};
+				};
+				class Item2
+				{
+					position[]={5340.3447,-0.015990863,9584.7031};
+					id=28;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.44999999;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=9;
+					synchronizations[]={3};
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={5347.2119,-0.022248384,9589.2051};
+					id=29;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.40000001;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=10;
+					synchronizations[]={3};
+				};
+				class Item1
+				{
+					position[]={5346.0596,-0.026081894,9588.1279};
+					id=30;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=11;
+					synchronizations[]={3};
+				};
+				class Item2
+				{
+					position[]={5348.3477,-0.021806661,9587.8447};
+					id=31;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=12;
+					synchronizations[]={3};
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={5329.0098,0.0039842101,9607.2861};
+					id=32;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.5;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=13;
+					synchronizations[]={3};
+				};
+				class Item1
+				{
+					position[]={5327.5459,0.011607777,9605.9785};
+					id=33;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.5;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=14;
+					synchronizations[]={3};
+				};
+				class Item2
+				{
+					position[]={5330.6484,-0.0010814993,9605.9209};
+					id=34;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.5;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=15;
+					synchronizations[]={3};
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={5343.5024,-0.0063187345,9601.8154};
+					id=35;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.5;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=16;
+					synchronizations[]={3};
+				};
+				class Item1
+				{
+					position[]={5342.1851,-0.013382012,9600.4209};
+					id=36;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=17;
+					synchronizations[]={3};
+				};
+				class Item2
+				{
+					position[]={5344.7778,-0.005590586,9600.3057};
+					id=37;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.44999999;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=18;
+					synchronizations[]={3};
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={5322.1382,0.0026804877,9592.6318};
+					id=38;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.40000001;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=19;
+					synchronizations[]={3};
+				};
+				class Item1
+				{
+					position[]={5320.8687,-0.0049648602,9591.2832};
+					id=39;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=20;
+					synchronizations[]={3};
+				};
+				class Item2
+				{
+					position[]={5323.6235,0.0043341601,9591.2275};
+					id=40;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=21;
+					synchronizations[]={3};
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={5356.4521,-0.00071461126,9585.5459};
+					id=41;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.44999999;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=22;
+					synchronizations[]={3};
+				};
+				class Item1
+				{
+					position[]={5357.666,-0.00024906918,9584.1455};
+					id=42;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.44999999;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=23;
+					synchronizations[]={3};
+				};
+				class Item2
+				{
+					position[]={5354.9121,-0.0073803584,9584.1602};
+					id=43;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.44999999;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=24;
+					synchronizations[]={3};
+				};
+			};
+		};
+		class Item12
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={5362.7412,-0.0072201854,9588.6641};
+					id=44;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.40000001;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=25;
+					synchronizations[]={3};
+				};
+				class Item1
+				{
+					position[]={5361.5889,-0.002214984,9587.5869};
+					id=45;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=26;
+					synchronizations[]={3};
+				};
+				class Item2
+				{
+					position[]={5363.876,-0.0095452135,9587.3027};
+					id=46;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=27;
+					synchronizations[]={3};
+				};
+			};
+		};
+		class Item13
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={5331.4214,0.0073688449,9595.4629};
+					id=47;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.5;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=28;
+					synchronizations[]={3};
+				};
+				class Item1
+				{
+					position[]={5329.8687,0.013010956,9593.0615};
+					id=48;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.5;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=29;
+					synchronizations[]={3};
+				};
+				class Item2
+				{
+					position[]={5332.9712,0.0039561633,9593.0039};
+					id=49;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.5;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=30;
+					synchronizations[]={3};
+				};
+			};
+		};
+		class Item14
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={5337.4961,-0.017276708,9598.3867};
+					id=50;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.5;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=31;
+					synchronizations[]={3};
+				};
+				class Item1
+				{
+					position[]={5336.1797,-0.013095967,9596.9912};
+					id=51;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.40000001;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTANR_CombatUniformTshirt"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  for ""_i"" from 1 to 4 do {this addItemToVest ""9Rnd_45ACP_Mag"";};  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""TRYK_R_CAP_BLK"";    comment ""Add weapons"";  this addWeapon ""hgun_ACPC2_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_1"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=32;
+					synchronizations[]={3};
+				};
+				class Item2
+				{
+					position[]={5338.7725,-0.019452697,9596.877};
+					id=52;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					skill=0.44999999;
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					description="Survivor";
+					syncId=33;
+					synchronizations[]={3};
+				};
+			};
+		};
+		class Item15
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5347.0552,0.019118397,9610.5996};
+					id=53;
+					side="LOGIC";
+					vehicle="VirtualCurator_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="p1";
+					description="Game Master - FaultyJordans";
+				};
+			};
+		};
+		class Item16
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={164.20015,-0.0058656032,180.58521};
+					azimut=-0.73071599;
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="p2";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="Game Master";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=54;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="bis_curator_1";
+					syncId=34;
+					synchronizations[]={1,2};
+				};
+			};
+		};
+		class Item17
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5348.4644,0.018175485,9610.5801};
+					id=55;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="p2";
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLKTAN_CombatUniform"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  for ""_i"" from 1 to 3 do {this addItemToVest ""16Rnd_9x21_Mag"";};  this addHeadgear ""TRYK_H_woolhat"";    comment ""Add weapons"";  this addWeapon ""hgun_Rook40_F"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_2"";  this linkItem ""ItemGPS"";";
+					description="Reserved for Game Master";
+					syncId=35;
+					synchronizations[]={3};
+				};
+			};
+		};
+		class Item18
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5349.7837,0.015772864,9610.584};
+					id=56;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="p3";
+					init="comment ""Exported from Arsenal by FaultyJordans"";    comment ""Remove existing items"";  removeAllWeapons this;  removeAllItems this;  removeAllAssignedItems this;  removeUniform this;  removeVest this;  removeBackpack this;  removeHeadgear this;  removeGoggles this;    comment ""Add containers"";  this forceAddUniform ""TRYK_U_B_BLTAN_T"";  this addItemToUniform ""ACE_EarPlugs"";  for ""_i"" from 1 to 3 do {this addItemToUniform ""ACE_fieldDressing"";};  this addItemToUniform ""ACE_morphine"";  this addItemToUniform ""ACE_epinephrine"";  this addVest ""V_TacVest_blk"";  this addItemToVest ""HandGrenade"";  this addItemToVest ""SmokeShell"";  this addItemToVest ""SmokeShellYellow"";  this addItemToVest ""SmokeShellRed"";  this addItemToVest ""Chemlight_green"";  this addItemToVest ""Chemlight_red"";  this addItemToVest ""Chemlight_yellow"";  this addHeadgear ""H_Bandanna_gry"";    comment ""Add weapons"";  this addWeapon ""Binocular"";    comment ""Add items"";  this linkItem ""ItemMap"";  this linkItem ""ItemCompass"";  this linkItem ""ItemWatch"";  this linkItem ""tf_anprc152_3"";  this linkItem ""ItemGPS"";";
+					description="Player Moderator - Olmsted";
+					syncId=36;
+					synchronizations[]={3};
+				};
+			};
+		};
+		class Item19
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={164.27827,-0.010564099,178.45288};
+					azimut=-0.73071599;
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="p3";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="Player Moderator";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=57;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="bis_curator_2";
+					syncId=37;
+					synchronizations[]={2,1};
+				};
+			};
+		};
+		class Item20
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={169.86134,0.0039037904,147.27563};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="['76561198008433047','76561198035332809']";
+							parentCls="mcc_sandbox_module";
+							typeName="names";
+						};
+					};
+					id=58;
+					side="LOGIC";
+					vehicle="mcc_sandbox_module";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={174.0713,0.0077235419,145.9021};
+					class args
+					{
+						items=21;
+						class Item0
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="t2t";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="saveGear";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="messages";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="sync";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="nameTags";
+						};
+						class Item5
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="groupMarkers";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="artilleryComputer";
+						};
+						class Item7
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="timeAccel";
+						};
+						class Item8
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="deleteBody";
+						};
+						class Item9
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="respawnMenu";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="sqlPDA";
+						};
+						class Item11
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="commanderConsole";
+						};
+						class Item12
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="commanderConsoleShowGPS";
+						};
+						class Item13
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="commanderConsoleWP";
+						};
+						class Item14
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="commanderConsoleAI";
+						};
+						class Item15
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="squadDialog";
+						};
+						class Item16
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="squadDialogPip";
+						};
+						class Item17
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="logistics";
+						};
+						class Item18
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="roleSelection";
+						};
+						class Item19
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="allowKitChange";
+						};
+						class Item20
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMissionSettings";
+							typeName="allowRTS";
+						};
+					};
+					id=59;
+					side="LOGIC";
+					vehicle="mcc_sandbox_moduleMissionSettings";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={169.75587,-0.011528023,142.43237};
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="1";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="actionMenu";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="cover";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="coverUI";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="coverVault";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="switchWeapons";
+						};
+						class Item5
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="interaction";
+						};
+						class Item6
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="interactionUI";
+						};
+						class Item7
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleCover";
+							typeName="survive";
+						};
+					};
+					id=60;
+					side="LOGIC";
+					vehicle="mcc_sandbox_moduleCover";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={165.65822,-0.0080840876,146.87085};
+					class args
+					{
+						items=6;
+						class Item0
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMedicSystem";
+							typeName="medicComplex";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMedicSystem";
+							typeName="medicBleedingEnabled";
+						};
+						class Item2
+						{
+							value="200";
+							parentCls="mcc_sandbox_moduleMedicSystem";
+							typeName="BleedingTime";
+						};
+						class Item3
+						{
+							value="0.8";
+							parentCls="mcc_sandbox_moduleMedicSystem";
+							typeName="DamageCoef";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMedicSystem";
+							typeName="medicXPmesseges";
+						};
+						class Item5
+						{
+							value="0";
+							parentCls="mcc_sandbox_moduleMedicSystem";
+							typeName="medicPunishTK";
+						};
+					};
+					id=61;
+					side="LOGIC";
+					vehicle="mcc_sandbox_moduleMedicSystem";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item21
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=5;
+				class Item0
+				{
+					position[]={170.37209,-0.013339655,126.44312};
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="false";
+							parentCls="ALiVE_require";
+							typeName="debug";
+						};
+						class Item1
+						{
+							value="warning";
+							parentCls="ALiVE_require";
+							typeName="ALiVE_Versioning";
+						};
+						class Item2
+						{
+							value="true";
+							parentCls="ALiVE_require";
+							typeName="ALiVE_DISABLESAVE";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ALiVE_require";
+							typeName="ALiVE_DISABLEMARKERS";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ALiVE_require";
+							typeName="ALiVE_DISABLEADMINACTIONS";
+						};
+						class Item5
+						{
+							value="300";
+							parentCls="ALiVE_require";
+							typeName="ALiVE_GC_INTERVAL";
+						};
+						class Item6
+						{
+							value="100";
+							parentCls="ALiVE_require";
+							typeName="ALiVE_GC_THRESHHOLD";
+						};
+						class Item7
+						{
+							value="";
+							parentCls="ALiVE_require";
+							typeName="ALiVE_GC_INDIVIDUALTYPES";
+						};
+					};
+					id=62;
+					side="LOGIC";
+					vehicle="ALiVE_require";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={177.70607,-0.029246826,126.34448};
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="false";
+							parentCls="ALiVE_sys_data";
+							typeName="debug";
+						};
+						class Item1
+						{
+							value="CouchDB";
+							parentCls="ALiVE_sys_data";
+							typeName="source";
+						};
+						class Item2
+						{
+							value="true";
+							parentCls="ALiVE_sys_data";
+							typeName="saveDateTime";
+						};
+						class Item3
+						{
+							value="true";
+							parentCls="ALiVE_sys_data";
+							typeName="disableStats";
+						};
+						class Item4
+						{
+							value="true";
+							parentCls="ALiVE_sys_data";
+							typeName="disableAAR";
+						};
+						class Item5
+						{
+							value="false";
+							parentCls="ALiVE_sys_data";
+							typeName="disablePerf";
+						};
+						class Item6
+						{
+							value="true";
+							parentCls="ALiVE_sys_data";
+							typeName="disablePerfMon";
+						};
+						class Item7
+						{
+							value="[['entities',150],['vehicles',300],['agents',450],['allDead',600],['objects',750],['triggers',900]]";
+							parentCls="ALiVE_sys_data";
+							typeName="customPerfMonCode";
+						};
+					};
+					id=63;
+					side="LOGIC";
+					vehicle="ALiVE_sys_data";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={170.34084,0.00062009785,120.90796};
+					class args
+					{
+						items=35;
+						class Item0
+						{
+							value="false";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="debug";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="VIEW_DISTANCE";
+						};
+						class Item2
+						{
+							value="20000";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="maxVD";
+						};
+						class Item3
+						{
+							value="500";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="minVD";
+						};
+						class Item4
+						{
+							value="5";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="maxTG";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="minTG";
+						};
+						class Item6
+						{
+							value="";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="PERSISTENCE";
+						};
+						class Item7
+						{
+							value="true";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="enablePlayerPersistence";
+						};
+						class Item8
+						{
+							value="true";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="allowReset";
+						};
+						class Item9
+						{
+							value="true";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="allowManualSave";
+						};
+						class Item10
+						{
+							value="false";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="allowDiffClass";
+						};
+						class Item11
+						{
+							value="true";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="saveLoadout";
+						};
+						class Item12
+						{
+							value="true";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="saveAmmo";
+						};
+						class Item13
+						{
+							value="true";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="saveHealth";
+						};
+						class Item14
+						{
+							value="true";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="savePosition";
+						};
+						class Item15
+						{
+							value="true";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="saveScores";
+						};
+						class Item16
+						{
+							value="true";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="storeToDB";
+						};
+						class Item17
+						{
+							value="0";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="autoSaveTime";
+						};
+						class Item18
+						{
+							value="";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="CREW_INFO";
+						};
+						class Item19
+						{
+							value="0";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="crewinfo_ui_setting";
+						};
+						class Item20
+						{
+							value="";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="PLAYER_TAGS";
+						};
+						class Item21
+						{
+							value="None";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="playertags_style_setting";
+						};
+						class Item22
+						{
+							value="false";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="playertags_onview_setting";
+						};
+						class Item23
+						{
+							value="true";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="playertags_displayrank_setting";
+						};
+						class Item24
+						{
+							value="true";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="playertags_displaygroup_setting";
+						};
+						class Item25
+						{
+							value="false";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="playertags_invehicle_setting";
+						};
+						class Item26
+						{
+							value="[""CAManBase"", ""Car"", ""Tank"", ""StaticWeapon"", ""Helicopter"", ""Plane""]";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="playertags_targets_setting";
+						};
+						class Item27
+						{
+							value="20";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="playertags_distance_setting";
+						};
+						class Item28
+						{
+							value="0.75";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="playertags_tolerance_setting";
+						};
+						class Item29
+						{
+							value="0.65";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="playertags_scale_setting";
+						};
+						class Item30
+						{
+							value="1.1";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="playertags_height_setting";
+						};
+						class Item31
+						{
+							value="#FFFFFF";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="playertags_namecolour_setting";
+						};
+						class Item32
+						{
+							value="#A8F000";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="playertags_groupcolour_setting";
+						};
+						class Item33
+						{
+							value="#FFB300";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="playertags_thisgroupleadernamecolour_setting";
+						};
+						class Item34
+						{
+							value="#009D91";
+							parentCls="ALiVE_SYS_playeroptions";
+							typeName="playertags_thisgroupcolour_setting";
+						};
+					};
+					id=64;
+					side="LOGIC";
+					vehicle="ALiVE_SYS_playeroptions";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={163.32027,0.0055861259,126.37573};
+					class args
+					{
+						items=8;
+						class Item0
+						{
+							value="false";
+							parentCls="ALiVE_sys_profile";
+							typeName="debug";
+						};
+						class Item1
+						{
+							value="true";
+							parentCls="ALiVE_sys_profile";
+							typeName="persistent";
+						};
+						class Item2
+						{
+							value="ADD";
+							parentCls="ALiVE_sys_profile";
+							typeName="syncronised";
+						};
+						class Item3
+						{
+							value="1500";
+							parentCls="ALiVE_sys_profile";
+							typeName="spawnRadius";
+						};
+						class Item4
+						{
+							value="1500";
+							parentCls="ALiVE_sys_profile";
+							typeName="spawnTypeHeliRadius";
+						};
+						class Item5
+						{
+							value="0";
+							parentCls="ALiVE_sys_profile";
+							typeName="spawnTypeJetRadius";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ALiVE_sys_profile";
+							typeName="activeLimiter";
+						};
+						class Item7
+						{
+							value="1";
+							parentCls="ALiVE_sys_profile";
+							typeName="speedModifier";
+						};
+					};
+					id=65;
+					side="LOGIC";
+					vehicle="ALiVE_sys_profile";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+				class Item4
+				{
+					position[]={166.98146,-0.013372856,130.31421};
+					class args
+					{
+						items=9;
+						class Item0
+						{
+							value="false";
+							parentCls="ALiVE_SYS_LOGISTICSDISABLE";
+							typeName="DEBUG";
+						};
+						class Item1
+						{
+							value="false";
+							parentCls="ALiVE_SYS_LOGISTICSDISABLE";
+							typeName="DISABLELOG";
+						};
+						class Item2
+						{
+							value="false";
+							parentCls="ALiVE_SYS_LOGISTICSDISABLE";
+							typeName="DISABLEPERSISTENCE";
+						};
+						class Item3
+						{
+							value="true";
+							parentCls="ALiVE_SYS_LOGISTICSDISABLE";
+							typeName="DISABLELOAD";
+						};
+						class Item4
+						{
+							value="true";
+							parentCls="ALiVE_SYS_LOGISTICSDISABLE";
+							typeName="DISABLETOW";
+						};
+						class Item5
+						{
+							value="true";
+							parentCls="ALiVE_SYS_LOGISTICSDISABLE";
+							typeName="DISABLELIFT";
+						};
+						class Item6
+						{
+							value="true";
+							parentCls="ALiVE_SYS_LOGISTICSDISABLE";
+							typeName="DISABLECARRY";
+						};
+						class Item7
+						{
+							value="true";
+							parentCls="ALiVE_SYS_LOGISTICSDISABLE";
+							typeName="DISABLE3D";
+						};
+						class Item8
+						{
+							value="";
+							parentCls="ALiVE_SYS_LOGISTICSDISABLE";
+							typeName="BLACKLIST";
+						};
+					};
+					id=66;
+					side="LOGIC";
+					vehicle="ALiVE_SYS_LOGISTICSDISABLE";
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item22
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={162.88931,-185.97,164.7876};
+					class args
+					{
+						items=7;
+						class Item0
+						{
+							value="0";
+							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
+							typeName="TeamLeaderRadio";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
+							typeName="RiflemanRadio";
+						};
+						class Item2
+						{
+							value="7";
+							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
+							typeName="terrain_interception_coefficient";
+						};
+						class Item3
+						{
+							value="TaskForceRadio";
+							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
+							typeName="radio_channel_name";
+						};
+						class Item4
+						{
+							value="123";
+							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
+							typeName="radio_channel_password";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
+							typeName="same_sw_frequencies_for_side";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="tfar_ModuleTaskForceRadioEnforceUsage";
+							typeName="same_lr_frequencies_for_side";
+						};
+					};
+					id=67;
+					side="LOGIC";
+					vehicle="tfar_ModuleTaskForceRadioEnforceUsage";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item23
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=5;
+				class Item0
+				{
+					position[]={-0.0049584964,-185.97,0.0018310547};
+					id=68;
+					side="EAST";
+					vehicle="RyanZombieC_man_1Opfor";
+					leader=1;
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={0.033836059,-185.97,0.69030762};
+					id=69;
+					side="EAST";
+					vehicle="RyanZombieC_man_1mediumOpfor";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={0.69322819,-185.97,-0.047607422};
+					id=70;
+					side="EAST";
+					vehicle="RyanZombieC_man_1slowOpfor";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={-0.78071046,-185.97,-0.047607422};
+					id=71;
+					side="EAST";
+					vehicle="RyanZombieSpider1Opfor";
+					skill=0.60000002;
+				};
+				class Item4
+				{
+					position[]={0.033836059,-185.97,-0.703125};
+					id=72;
+					side="EAST";
+					vehicle="RyanZombieboss1Opfor";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=7;
+		class Item0
+		{
+			position[]={14495.743,9.7511377,5884.1147};
+			id=73;
+			side="EMPTY";
+			vehicle="I_supplyCrate_F";
+			skill=0.60000002;
+			init="this addAction[""<t color='#ff1111'>Arsenal Ammobox</t>"", ""VA\VirturalArsenal.sqf""]; this allowDamage false;";
+			syncId=38;
+			synchronizations[]={1};
+		};
+		class Item1
+		{
+			position[]={5349.9512,0.0018036845,9641.3467};
+			id=74;
+			side="EMPTY";
+			vehicle="C_Boat_Civil_04_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item2
+		{
+			position[]={5322.7998,0.013102764,9604.3271};
+			azimut=-35.311077;
+			id=75;
+			side="EMPTY";
+			vehicle="B_G_Boat_Transport_01_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item3
+		{
+			position[]={5344.3359,-0.015128592,9587.1143};
+			azimut=-35.311077;
+			id=76;
+			side="EMPTY";
+			vehicle="B_G_Boat_Transport_01_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item4
+		{
+			position[]={5326.2617,0.0078757675,9593.1748};
+			azimut=-35.311077;
+			id=77;
+			side="EMPTY";
+			vehicle="B_G_Boat_Transport_01_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item5
+		{
+			position[]={5359.0464,0.0013221409,9586.4443};
+			azimut=-35.311077;
+			id=78;
+			side="EMPTY";
+			vehicle="B_G_Boat_Transport_01_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+		class Item6
+		{
+			position[]={5339.9126,-0.010169178,9599.5166};
+			azimut=-35.311077;
+			id=79;
+			side="EMPTY";
+			vehicle="B_G_Boat_Transport_01_F";
+			skill=0.60000002;
+			init="this allowDamage false;";
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={5339.2612,0.0010654246,9610.9551};
+			name="respawn_west";
+			type="Empty";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=3162033;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=15521101;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=11736311;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
