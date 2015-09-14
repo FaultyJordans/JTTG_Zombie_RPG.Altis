@@ -1,0 +1,33 @@
+waitUntil {!isNull player};
+
+_unit = _this select 0;
+removeAllWeapons _unit;  
+removeAllItems _unit;  
+removeAllAssignedItems _unit;  
+removeUniform _unit;  
+removeVest _unit;  
+removeBackpack _unit;  
+removeHeadgear _unit;  
+removeGoggles _unit;
+_unit forceAddUniform "TRYK_U_B_BLTAN_T";  
+_unit addItemToUniform "ACE_EarPlugs";  
+for "_i" from 1 to 3 do {_unit addItemToUniform "ACE_fieldDressing";};  
+_unit addItemToUniform "ACE_morphine";  
+_unit addItemToUniform "ACE_epinephrine";  
+_unit addVest "V_TacVest_blk";  
+_unit addItemToVest "HandGrenade";  
+_unit addItemToVest "SmokeShell";  
+_unit addItemToVest "SmokeShellYellow"; 
+_unit addItemToVest "SmokeShellRed";  
+_unit addItemToVest "Chemlight_green";  
+_unit addItemToVest "Chemlight_red";  
+_unit addItemToVest "Chemlight_yellow";  
+_unit addHeadgear "H_Bandanna_gry";    
+_unit addWeapon "Binocular";    
+_unit linkItem "ItemMap";  
+_unit linkItem "ItemCompass";  
+_unit linkItem "ItemWatch";  
+_unit linkItem "tf_anprc152_3";  
+_unit linkItem "ItemGPS";
+
+if(true) exitWith{};
