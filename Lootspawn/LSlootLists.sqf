@@ -173,7 +173,7 @@ lootMagazine_list =
 			"7Rnd_408_Mag",
 			"hlc_5rnd_300WM_FMJ_AWM",
 			"RPG32_F",
-"			10Rnd_93x64_DMR_05_Mag"
+			"10Rnd_93x64_DMR_05_Mag"
 		]
 	]
 ];
