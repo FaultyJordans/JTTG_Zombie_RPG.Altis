@@ -4,7 +4,6 @@ OnLoadMission = Zombie Role Playing Game kinda like Dungeons and Dragons;
 loadScreen =  "Loadscreens\Loadscreen.paa";
 respawn = 3;
 respawnDelay = 10;
-respawnOnStart = 1;
 disabledAI = 1;
 joinUnassigned = 1;
 aiKills  = 1;
