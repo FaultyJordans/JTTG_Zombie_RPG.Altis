@@ -11,7 +11,7 @@ saving = 0;
 enableDebugConsole = 1; // 0 = Default behavior, available only in editor, 1 = Available in SP and for hosts / logged in admins, 2 = Available for everyone
 forceRotorLibSimulation = 2; // 0 = default options based, 1 = forced on, 2 = forced off
 
-//respawnTemplatesWest[] = {"MenuInventory","MenuPosition"};
+respawnTemplatesWest[] = {"MenuPosition"};
 
 class Header
 {
